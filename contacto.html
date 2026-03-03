@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Metry Analytics — Contacto</title>
+  <meta name="description" content="Contactá a Metry Analytics. Coordinamos una llamada y te ayudamos a ejecutar valor con datos, analítica e IA." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- NAV (misma que index/servicios) -->
+  <div class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand brand-pro" href="index.html" aria-label="Metry Analytics">
+        <img src="https://i.imgur.com/Y4oQ3Cj.png" class="logo-main" alt="Metry Analytics logo">
+        <span class="brand-sub">Consultoría Estratégica de Datos</span>
+      </a>
+
+      <nav class="menu" aria-label="Navegación">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="metodologia.html">Metodología</a>
+        <a href="industrias.html">Industrias</a>
+        <a href="insights.html">Insights</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section id="contacto">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>Dejanos tu mensaje y coordinamos una llamada. Respondemos rápido.</p>
+        </div>
+
+        <div class="contact">
+          <!-- Left: Form -->
+          <div class="panel reveal">
+            <div class="kicker" style="margin-bottom:14px">
+              <span style="width:8px;height:8px;border-radius:99px;background:var(--teal);display:inline-block"></span>
+              ENVIANOS TU CONSULTA
+            </div>
+
+            <h3 style="margin:0 0 6px; color:var(--navy)">Contanos qué querés lograr</h3>
+            <p class="lead" style="margin:0 0 16px; font-size:14.5px">
+              Compartinos contexto y objetivos. Te respondemos con próximos pasos claros.
+            </p>
+
+            <form id="contactForm">
+              <div class="field">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" placeholder="Tu nombre" autocomplete="name" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="tu@empresa.com" autocomplete="email" required />
+              </div>
+
+              <div class="field">
+                <label for="msg">Mensaje</label>
+                <textarea id="msg" name="msg" placeholder="Ej: Queremos mejorar calidad de datos y definir un roadmap de analítica en 8 semanas." required></textarea>
+              </div>
+
+              <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:8px">
+                <button class="btn primary" type="submit">Enviar</button>
+
+                <!-- Quick actions (same email + WhatsApp) -->
+                <a class="btn ghost" href="mailto:admin@metryanalytics.com?subject=Consulta%20Metry%20Analytics&body=Hola%20Metry%20Analytics%2C%0A%0AQuisiera%20coordinar%20una%20consulta.%0A%0AGracias.">
+                  Enviar por correo
+                </a>
+              </div>
+
+              <p style="margin:14px 0 0; color:var(--muted); font-size:12.8px; line-height:1.5">
+                Al enviar este formulario, te contactaremos por email para coordinar una llamada.
+              </p>
+            </form>
+          </div>
+
+          <!-- Right: Contact info + CTA -->
+          <div class="panel reveal">
+            <div class="kicker">
+              <span style="width:8px;height:8px;border-radius:99px;background:var(--teal);display:inline-block"></span>
+              METRY ANALYTICS
+            </div>
+
+            <h3 style="margin:12px 0 8px; color:var(--navy)">Agendemos</h3>
+
+            <p class="lead" style="margin:0 0 14px">
+              <b style="color:var(--navy)">Email:</b> admin@metryanalytics.com<br/>
+              <b style="color:var(--navy)">Teléfono:</b> +502 3989-1833
+            </p>
+
+            <div class="card" style="margin:0 0 14px; padding:16px; border-radius:18px">
+              <b style="display:block; color:var(--navy); font-size:14px">Qué pasa después</b>
+              <p style="margin:8px 0 0; color:var(--muted); font-size:13.6px; line-height:1.55">
+                1) Revisamos tu mensaje.<br/>
+                2) Coordinamos una llamada corta.<br/>
+                3) Te proponemos un plan (roadmap) con próximos pasos.
+              </p>
+            </div>
+
+            <div class="cta">
+              <a class="btn primary" data-call href="#">Programar llamada</a>
+              <a class="btn ghost" href="https://wa.me/50239891833?text=Hola%20Metry%20Analytics%2C%20quiero%20una%20consulta.">WhatsApp</a>
+              <a class="btn ghost" href="mailto:admin@metryanalytics.com?subject=Consulta%20Metry%20Analytics&body=Hola%20Metry%20Analytics%2C%0A%0AQuisiera%20coordinar%20una%20consulta.%0A%0AGracias.">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+        <img src="https://i.imgur.com/Y4oQ3Cj.png" alt="Metry Analytics" style="height:32px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.10))" />
+        <span>© <span id="year"></span> Metry Analytics. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- WhatsApp floating -->
+  <a class="wa" id="waBtn" href="#" aria-label="WhatsApp">
+    <img src="https://i.imgur.com/6r4qWkX.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
