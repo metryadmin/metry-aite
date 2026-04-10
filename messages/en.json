@@ -1,0 +1,333 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "methodology": "Methodology",
+    "industries": "Industries",
+    "insights": "Insights",
+    "usecases": "Use Cases",
+    "team": "About Us",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "eyebrow": "Strategic Data Consulting · Guatemala & LATAM",
+    "heading_1": "Reliable",
+    "heading_2": "data.",
+    "heading_3": "Clear",
+    "heading_4": "decisions.",
+    "trust_1": "Diagnosis based on your needs",
+    "trust_2": "Measurable impact in 6–8 weeks",
+    "trust_3": "Architecture without technical debt",
+    "metric_1": "ROI on projects",
+    "metric_2": "Technical debt",
+    "metric_3": "Business focus",
+    "subtitle": "We help companies build strategy, platforms, analytics, and AI with real impact.",
+    "cta_primary": "Schedule a Call",
+    "cta_secondary": "View Services"
+  },
+  "ValueProposition": {
+    "title": "Our Value Proposition",
+    "pillar1_title": "Data Confidence",
+    "pillar1_desc": "Quality, ownership, and traceability for frictionless decisions.",
+    "pillar2_title": "Speed with Control",
+    "pillar2_desc": "Governance and execution to scale analytics and AI without improvisation.",
+    "pillar3_title": "Measurable Impact",
+    "pillar3_desc": "Roadmaps and use cases prioritized by real value and results."
+  },
+  "Results": {
+    "title": "The problem isn't technology, it's structural.",
+    "subtitle": "The Real Challenge",
+    "hook": "The challenge lies not only in 'having data', but in trusting it and using it effectively. It is essential to adopt an integral approach covering strategy, governance, technology, people, and processes.",
+    "points": [
+      {
+        "title": "1. Strategic Integration",
+        "desc": "We connect dispersed systems to create a single source of truth, eliminating duplication, inconsistencies, and wasted resources."
+      },
+      {
+        "title": "2. Governance & Ownership",
+        "desc": "We establish a Data Office with clear roles and defined policies. Data stops being 'everyone's and no one's' responsibility."
+      },
+      {
+        "title": "3. Quality & Pure Trust",
+        "desc": "We implement systematic cleaning processes and metrics so high-stakes decisions are backed by absolute certainty."
+      },
+      {
+        "title": "4. Risk Mitigation",
+        "desc": "We secure regulatory compliance and robust traceability for flawless audits and peace of mind."
+      },
+      {
+        "title": "5. High-Impact Analytics",
+        "desc": "We transform static dashboards into predictive machines that trigger provable business actions."
+      },
+      {
+        "title": "6. Well-Founded AI",
+        "desc": "We build administered infrastructure (MLOps) before scaling models, mitigating algorithm risk from day one."
+      }
+    ]
+  },
+  "CallToAction": {
+    "title": "Take the next step",
+    "subtitle": "Ready to turn information into real results?",
+    "btn": "Contact us today"
+  },
+  "Footer": {
+    "description": "Strategic Data Consulting for the corporate sector in Guatemala and Latin America.",
+    "links": "Quick Links",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "rights": "All rights reserved."
+  },
+  "Services": {
+    "title": "Services",
+    "subtitle": "Strategy, architecture, and end-to-end data operations.",
+    "all_services": "All our services",
+    "learn_more": "Details",
+    "services_list": [
+      {
+        "id": "estrategia",
+        "title": "Strategic Data Consulting",
+        "category": "Strategy",
+        "short": "Diagnosis and strategic planning service.",
+        "desc": "Strategic diagnosis and planning of Data & Analytics: defining operating scenarios, maturity assessment, gap analysis, and roadmap design to scale corporate goals."
+      },
+      {
+        "id": "calidad",
+        "title": "Data Quality",
+        "category": "Governance",
+        "short": "Standards, measurement, and continuous remediation processes.",
+        "desc": "Comprehensive data quality service: definition of standards, monitoring via automated rules, control dashboards, and remediation processes to ensure 100% reliable data."
+      },
+      {
+        "id": "gobierno",
+        "title": "Governance, Data Office & CoE",
+        "category": "Governance",
+        "short": "Implementation of governance frameworks and management policies.",
+        "desc": "Formal establishment of a Data Office, defining roles (Owners, Stewards), corporate management policies, and enabling Data Centers of Excellence (CoE)."
+      },
+      {
+        "id": "unificacion",
+        "title": "Service Unification",
+        "category": "Engineering",
+        "short": "Consolidation of ecosystems without operational silos.",
+        "desc": "Consolidation of dispersed sources into a unified platform. We eliminate silos by integrating centralized service layers and robust standardized access APIs."
+      },
+      {
+        "id": "analitica",
+        "title": "Advanced Analytics",
+        "category": "Analytics",
+        "short": "Analytical frameworks oriented to decision making.",
+        "desc": "Tailored analytical service: KPIs definition, dimensional modeling, high-fidelity dashboards, and ad-hoc explorations to enable executive control."
+      },
+      {
+        "id": "plataformas-internas",
+        "title": "Internal Data Platforms",
+        "category": "Technology",
+        "short": "Design of Data Lakes and Lakehouses for efficient consumption.",
+        "desc": "Implementation of corporate platforms (Data Lake, modern Data Warehouse). We manage ingestion, transformation, secure storage, and scalable consumption layers."
+      },
+      {
+        "id": "plataformas-externas",
+        "title": "External Data Platforms",
+        "category": "Technology",
+        "short": "Secure data exchange with clients and suppliers.",
+        "desc": "We design data ecosystems to externalize analytics: exchange portals with partners, public API deployment, and secure multi-tenant architectures."
+      },
+      {
+        "id": "monetizacion",
+        "title": "Data Monetization",
+        "category": "Strategy",
+        "short": "Financial value capture from informational assets.",
+        "desc": "Identification of profitable opportunities: we design data product-based business models, structuring their go-to-market and pricing strategy."
+      },
+      {
+        "id": "operacion",
+        "title": "Platform Operations",
+        "category": "Engineering",
+        "short": "SRE monitoring, observability, and infrastructure control.",
+        "desc": "Continuous platform administration: active monitoring, pipeline observability, cloud cost control, and incident management ensuring high availability."
+      },
+      {
+        "id": "ia",
+        "title": "Applied AI",
+        "category": "Artificial Intelligence",
+        "short": "Production ML use cases under controlled MLOps mitigation.",
+        "desc": "AI development on solid foundations: we identify and prioritize use cases, train algorithms, and deploy them under continuous risk management processes (MLOps)."
+      }
+    ]
+  },
+  "Methodology": {
+    "title": "Data Target Operating Model",
+    "subtitle": "Iterative strategic framework to operationalize data assets with tangible P&L impact.",
+    "foundation_kicker": "Adapted from Gartner",
+    "foundation_title": "Data as a Strategic Asset",
+    "foundation_subtitle": "Data is a business asset, not a byproduct of operations.",
+    "foundation_left_title": "Strategic Bases",
+    "foundation_left_desc": "Vision, outcomes, and principles for an information-driven organization.",
+    "foundation_left_tags": ["Vision", "Outcomes", "Principles"],
+    "foundation_center_title": "Use Cases",
+    "foundation_center_desc": "Value creation and attention to corporate priorities.",
+    "foundation_right_title": "Operating Model",
+    "foundation_right_desc": "People, culture, governance, and technology for best analytics practice.",
+    "foundation_right_tags": ["Capabilities", "Enablers", "Roadmap"],
+    "steps": [
+      {
+        "num": "01",
+        "title": "Strategic Discovery & Baseline",
+        "desc": "Intensive 2-sprint audit. We map data maturity (Data Maturity Assessment), assess the current technological landscape, and calculate technical debt to establish the baseline."
+      },
+      {
+        "num": "02",
+        "title": "Architecture & Blueprint",
+        "desc": "We design the Target Operating Model. We define the cloud ecosystem topology, the portfolio of ROI-prioritized business cases, and governance frameworks."
+      },
+      {
+        "num": "03",
+        "title": "Engineering Foundations",
+        "desc": "Deployment of foundational infrastructure. We build mission-critical pipelines, optimal dimensional modeling, and enable governed semantic layers from day one."
+      },
+      {
+        "num": "04",
+        "title": "Activation (Data as a Product)",
+        "desc": "We package models and dashboards as executable products for executives. We establish data ownership policies and train functional leaders for adoption."
+      },
+      {
+        "num": "05",
+        "title": "Scale & Continuous Ops",
+        "desc": "Transition to a managed MLOps / DataOps model. Predictive monitoring of pipelines, continuous quality assurance, and expansion of the strategic roadmap."
+      }
+    ]
+  },
+  "Industries": {
+    "title": "Industries",
+    "subtitle": "Real experience in sectors with the highest demand for data and analytics.",
+    "industries_list": [
+      {
+        "id": "retail",
+        "title": "Retail & Consumer",
+        "desc": "We optimize inventory, sales, and customer segmentation using predictive analytics and integrated data across physical and digital channels.",
+        "benefits": ["Demand forecasting", "Customer segmentation", "Pricing optimization", "Sell-through analysis"]
+      },
+      {
+        "id": "finanzas",
+        "title": "Financial Services",
+        "desc": "Robust governance, data traceability, and risk analysis for institutions operating under strict regulatory requirements.",
+        "benefits": ["Regulatory governance", "Credit risk analysis", "Fraud detection", "Automated reporting"]
+      },
+      {
+        "id": "manufactura",
+        "title": "Manufacturing & Operations",
+        "desc": "Supply chain visibility, operational efficiency, and predictive maintenance to reduce costs and improve service levels.",
+        "benefits": ["Supply chain traceability", "Predictive maintenance", "Quality control", "Plant efficiency"]
+      },
+      {
+        "id": "salud",
+        "title": "Healthcare & Pharma",
+        "desc": "Clinical and operational data platforms to improve patient care and efficiency of hospital operations.",
+        "benefits": ["Unified clinical data", "Hospital efficiency", "Operations BI", "Drug demand forecast"]
+      }
+    ]
+  },
+  "Insights": {
+    "title": "Insights",
+    "subtitle": "Perspectives, trends, and learnings from the world of data and AI for business leaders.",
+    "read_more": "Read article →",
+    "insights_list": [
+      {
+        "id": "plataforma-metry",
+        "category": "Platforms",
+        "title": "Demo: Metry Data Platform & Architecture",
+        "excerpt": "Explore how we design comprehensive analytical platforms. From data integration architecture (ETL) to the deployment of executive consumption dashboards in Metabase.",
+        "date": "April 2026"
+      },
+      {
+        "id": "estrategia-datos",
+        "category": "Strategy",
+        "title": "The Analytical Pyramid: Pillars of a Data Strategy",
+        "excerpt": "Success in data management is not a purely technological aspect, but the harmonization of leadership, agility, and operational governance.",
+        "date": "May 2026"
+      },
+      {
+        "id": "stack-moderno",
+        "category": "Architecture",
+        "title": "The Modern Data Stack in 2025: What we adopt and what we avoid",
+        "excerpt": "dbt, Iceberg, Spark, Flink, Snowflake, Databricks... the ecosystem is huge. We share our view on which tools to adopt based on your maturity level and company type.",
+        "date": "January 2025"
+      }
+    ]
+  },
+  "About": {
+    "title": "Who We Are",
+    "subtitle": "Metry Analytics is a strategic data firm dedicated to designing, building, and managing data and artificial intelligence capabilities on solid foundations.",
+    "pillars_title": "Our Pillars",
+    "vision_title": "Our Vision",
+    "vision_1": "Elevate the standard of data and artificial intelligence in Central America and Latin America.",
+    "vision_2": "Transform data into a valuable asset that facilitates decision-making and generates new revenue opportunities.",
+    "mission_title": "Our Mission",
+    "mission_1": "Assist executive and technology leaders in transitioning isolated data initiatives into high-value operational capabilities.",
+    "mission_2": "Deliver measurable results through careful planning, operation, and management of sustainable architecture and governance.",
+    "pillars": [
+      {
+        "title": "Strategic Consulting",
+        "desc": "Maturity assessment, data roadmaps, and alignment with business objectives."
+      },
+      {
+        "title": "Regional Coverage",
+        "desc": "Central America and LATAM. Deep knowledge of the business, regulatory, and cultural context of the region."
+      },
+      {
+        "title": "International Standard",
+        "desc": "Global methodologies locally adapted. Team certified in cloud platforms, data governance, and machine learning."
+      },
+      {
+        "title": "Commitment to Results",
+        "desc": "We deliver measurable outcomes. Our proposal includes capability transfer and sustainable governance."
+      }
+    ]
+  },
+  "Team": {
+    "title": "Our Leadership",
+    "subtitle": "Founders with complementary focus to bring data and AI to production with real impact.",
+    "members": [
+      {
+        "name": "Eduardo Andrino",
+        "role": "CEO & Data Strategy Lead",
+        "areas": "Strategy · Governance · Data Office · Monetization",
+        "desc": "Specialist in data operating model, corporate governance, quality, and monetization. Executive focus on strategic transformations."
+      },
+      {
+        "name": "Alejandro Carboni",
+        "role": "CTO & Data Architecture Lead",
+        "areas": "Architecture · Platforms · Integration · Operations",
+        "desc": "Expert in scalable cloud architectures, modern pipelines, and reliable data platform operations on AWS, Azure, and GCP."
+      },
+      {
+        "name": "Bernardo Velásquez",
+        "role": "CDO & Analytics Lead",
+        "areas": "Advanced Analytics · AI · Industrialization",
+        "desc": "Specialist in analytics and AI use cases, responsible deployment, organizational adoption, and production model operations (MLOps)."
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Tell us your challenge and we'll schedule a strategic call.",
+    "form_title": "What do you want to achieve?",
+    "form_desc": "Share your context and goals. We'll get back to you with clear next steps in under 24 hours.",
+    "name": "Full Name",
+    "company": "Company",
+    "email": "Corporate Email",
+    "phone": "Phone (optional)",
+    "service": "Service of Interest",
+    "message": "Message",
+    "message_placeholder": "Ex: We want to improve data quality and define an analytics roadmap...",
+    "submit": "Send Message",
+    "info_subtitle": "Let's schedule a call",
+    "process_title": "What happens after your message?",
+    "process_1": "We thoroughly review your inquiry.",
+    "process_2": "We schedule a 30-min discovery call.",
+    "process_3": "We propose a concrete action plan.",
+    "toast_success": "Message sent successfully. We will contact you soon.",
+    "toast_error": "An error occurred while sending. Please try again."
+  }
+}
