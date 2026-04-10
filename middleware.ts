@@ -1,45 +1,44 @@
 import {NextRequest, NextResponse} from 'next/server';
 
-type MiddlewareFn = (request: NextRequest) => NextResponse | Response | Promise<NextResponse | Response>;
+const locales = ['es', 'en'] as const;
+const defaultLocale = 'es';
 
-let cachedIntlMiddleware: MiddlewareFn | null = null;
-let initPromise: Promise<void> | null = null;
-
-async function ensureIntlMiddleware() {
-  if (cachedIntlMiddleware) return;
-  if (initPromise) return initPromise;
-
-  initPromise = (async () => {
-    // Dynamic import to avoid hard-failing the Edge runtime if a dependency
-    // throws during module initialization (e.g. "__dirname is not defined").
-    const mod = await import('next-intl/middleware');
-    const createMiddleware = mod.default;
-
-    cachedIntlMiddleware = createMiddleware({
-      locales: ['es', 'en'],
-      defaultLocale: 'es',
-      localePrefix: 'as-needed'
-    }) as unknown as MiddlewareFn;
-  })().finally(() => {
-    initPromise = null;
-  });
-
-  return initPromise;
+function hasFileExtension(pathname: string) {
+  return /\.[^/]+$/.test(pathname);
 }
 
-export default async function middleware(request: NextRequest) {
+function getLocaleFromPathname(pathname: string) {
+  const segment = pathname.split('/')[1];
+  return locales.includes(segment as (typeof locales)[number])
+    ? (segment as (typeof locales)[number])
+    : null;
+}
+
+export default function middleware(request: NextRequest) {
   try {
-    await ensureIntlMiddleware();
-    if (!cachedIntlMiddleware) return NextResponse.next();
-    return await cachedIntlMiddleware(request);
+    const {pathname} = request.nextUrl;
+
+    if (
+      pathname.startsWith('/api') ||
+      pathname.startsWith('/_next') ||
+      pathname.startsWith('/_vercel') ||
+      hasFileExtension(pathname)
+    ) {
+      return NextResponse.next();
+    }
+
+    const locale = getLocaleFromPathname(pathname);
+    if (locale) return NextResponse.next();
+
+    const url = request.nextUrl.clone();
+    url.pathname = `/${defaultLocale}${pathname === '/' ? '' : pathname}`;
+    return NextResponse.redirect(url);
   } catch (error) {
-    // Evita 500 por fallas inesperadas en Edge Middleware y deja trazas en logs (Vercel).
-    console.error('[middleware] middleware failed', request.url, error);
+    console.error('[middleware] locale redirect failed', request.url, error);
     return NextResponse.next();
   }
 }
 
 export const config = {
-  // Coincide con todas las peticiones (salvo api, _next y static files)
   matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };
