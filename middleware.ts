@@ -1,21 +1,40 @@
-import createMiddleware from 'next-intl/middleware';
 import {NextRequest, NextResponse} from 'next/server';
 
-const intlMiddleware = createMiddleware({
-  // Las locales soportadas
-  locales: ['es', 'en'],
-  
-  // Utilizado cuando no hay match
-  defaultLocale: 'es',
-  localePrefix: 'as-needed'
-});
+type MiddlewareFn = (request: NextRequest) => NextResponse | Response | Promise<NextResponse | Response>;
 
-export default function middleware(request: NextRequest) {
+let cachedIntlMiddleware: MiddlewareFn | null = null;
+let initPromise: Promise<void> | null = null;
+
+async function ensureIntlMiddleware() {
+  if (cachedIntlMiddleware) return;
+  if (initPromise) return initPromise;
+
+  initPromise = (async () => {
+    // Dynamic import to avoid hard-failing the Edge runtime if a dependency
+    // throws during module initialization (e.g. "__dirname is not defined").
+    const mod = await import('next-intl/middleware');
+    const createMiddleware = mod.default;
+
+    cachedIntlMiddleware = createMiddleware({
+      locales: ['es', 'en'],
+      defaultLocale: 'es',
+      localePrefix: 'as-needed'
+    }) as unknown as MiddlewareFn;
+  })().finally(() => {
+    initPromise = null;
+  });
+
+  return initPromise;
+}
+
+export default async function middleware(request: NextRequest) {
   try {
-    return intlMiddleware(request);
+    await ensureIntlMiddleware();
+    if (!cachedIntlMiddleware) return NextResponse.next();
+    return await cachedIntlMiddleware(request);
   } catch (error) {
     // Evita 500 por fallas inesperadas en Edge Middleware y deja trazas en logs (Vercel).
-    console.error('[middleware] next-intl middleware failed', request.url, error);
+    console.error('[middleware] middleware failed', request.url, error);
     return NextResponse.next();
   }
 }
