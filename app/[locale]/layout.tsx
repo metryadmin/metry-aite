@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({
-  children,
+      children,
   params
 }: {
   children: React.ReactNode;
@@ -25,7 +25,7 @@ export default async function RootLayout({
 
   return (
     <div className={`${inter.variable} font-sans min-h-screen flex flex-col`}>
-      <NextIntlClientProvider messages={messages}>
+      <NextIntlClientProvider locale={locale} messages={messages}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           <main className="flex-1">{children}</main>
